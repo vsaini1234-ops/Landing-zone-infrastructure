@@ -1,0 +1,8 @@
+ResourceType,Key,Name,ResourceGroupName,Location,AccountTier,AccountReplicationType,AddressSpace,VirtualNetworkName,AddressPrefixes
+ResourceGroup,rg1,v_rg,,South India,,,,,
+ResourceGroup,rg2,p_rg,,East us,,,,,
+StorageAccount,storacc1,vikramstorage01,v_rg,South India,Standard,GRS,,,
+VNet,vnet1,v_vnet1,v_rg,South India,,,10.1.0.0/16,,
+VNet,vnet2,p_vnet1,p_rg,East us,,,10.2.0.0/16,,
+Subnet,subnet1,v_subnet1,v_rg,,,,,v_vnet1,10.1.1.0/24
+Subnet,subnet2,p_subnet1,p_rg,,,,,p_vnet1,10.2.1.0/24
